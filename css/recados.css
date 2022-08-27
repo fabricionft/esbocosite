@@ -1,0 +1,88 @@
+main{
+    width: 100%;
+    height: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerRecado{
+    width: 75%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.divRecado{
+    background: rgb(255, 255, 255);
+    width: 47.5%;
+    height: 44%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.divTitulo{
+    width: 100%;
+    height: 25%;
+    background: #1E90FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 5px 0 0;
+}
+
+.h1Recado{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+.divInfo{
+    width: 80%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+}
+
+.subtitulo{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1475d6;
+}
+
+.texto{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #626466;
+    margin: 0;
+}
+
+.divBotoes{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: rgb(232, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+.btn:hover{
+    background: rgb(181, 25, 25);
+}

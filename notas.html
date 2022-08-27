@@ -1,0 +1,257 @@
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+		<title>Notas</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/universal.css">
+		<link rel="stylesheet" type="text/css" href="css/notas.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" 
+		integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs"
+		crossorigin="anonymous"></script>
+
+	</head>
+	
+	
+	<body>
+
+		<!--Header-->
+		<header class="headerHeader"><br>
+			<label class="labelMenu1">
+				<a href="menuAluno.html">
+					<img src="icon/botao-de-retorno.png" width="20">
+				</a>
+			</label>
+		</header>
+		
+		<!--Notas-->
+		<main class="main">
+
+		<div class="container">
+			<div class="divTexto">
+
+					<div class="divTitulo">
+						<h1 align="center">ENSINO MÉDIO</h1>
+					</div>
+
+					<div class="divInfo" id="info">
+						<table>
+							<tr>
+								<td class="materias">Matérias</td>
+								<td class="notas">1º Bimestre</td>
+								<td class="faltas">F</td>
+	
+								<td class="notas">2º Bimestre</td>
+								<td class="faltas">F</td>
+	
+								<td class="notas">3º Bimestre</td>
+								<td class="faltas">F</td>
+	
+								<td class="notas">4º Bimestre</td>
+								<td class="faltas">F</td>
+							</tr>
+							
+							<tr>
+								<td class="materias">Português</td>
+								<td class="notas">7.5</td>
+								<td class="faltas">4</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+							</tr>
+							
+							<tr>
+								<td class="materias">Matemática</td>
+								<td class="notas">9.5</td>
+								<td class="faltas">2</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+							</tr>
+
+							<tr>
+								<td class="materias">Biologia</td>
+								<td class="notas">5</td>
+								<td class="faltas">2</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+							</tr>
+
+							<tr>
+								<td class="materias">Física</td>
+								<td class="notas">9</td>
+								<td class="faltas">4</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+							</tr>
+
+							<tr>
+								<td class="materias">Sociologia</td>
+								<td class="notas">5.5</td>
+								<td class="faltas">4</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+							</tr>
+
+							<tr>
+								<td class="materias">Filosofia</td>
+								<td class="notas">8</td>
+								<td class="faltas">1</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+							</tr>
+
+							<tr>
+								<td class="materias">Artes</td>
+								<td class="notas">8.5</td>
+								<td class="faltas">2</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+							</tr>
+
+							<tr>
+								<td class="materias">Ed.fisica</td>
+								<td class="notas">10</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+							</tr>
+
+							<tr>
+								<td class="materias">Inglês</td>
+								<td class="notas">8.5</td>
+								<td class="faltas">9</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+								<td class="notas">0</td>
+								<td class="faltas">0</td>
+							</tr>
+							
+						</table>
+					</div>
+				
+				
+			</div>	
+	
+			<div class="divbotoes">
+				<a onclick="gerarPDF()" class="btn">Gerar pdf</a>
+			</div>
+		</div>
+
+		</main>
+
+		<script>
+			function gerarPDF(){
+				var getDados = document.getElementById('info').innerHTML;
+		
+				var janela = window.open('', '', 'width=300, heigth=300');
+				janela.document.write('<html><head>')
+				janela.document.write('<title>Notas</title </head>')
+				janela.document.write('<body>');
+				janela.document.write(getDados);
+				janela.document.write('<body>');
+				janela.document.write('</html>');
+				janela.print();
+				janela.close();
+			}
+		</script>
+		
+		<!--Footer-->
+		<footer class="containerFooter">
+
+			<div class="divFooterMargem">
+				<!--1-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Informações sobre</h1>
+					<p class="pFooter">Este site terá o objetivo padronizar escolas, para que tenham uma gestão mais simples e rápida</p> 
+				</div>
+				
+				<!--2-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Contatos</h1>
+					<p class="pFooter">(19) 98254-4396</p>
+					<p class="pFooter">(19) 98459-7236</p> 
+				</div>
+				
+				<!--3-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Dúvidas</h1>
+					
+					<a class="aFooter">Como usar</a> <br>
+					
+					<a class="aFooter">Como acessar</a> <br>
+					
+					<a class="aFooter">Dias de aulas</a> <br>
+				</div>
+				
+				<!--4-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Redes sociais</h1>
+					
+					<a class="aFooter">Facebook</a> <br>
+					
+					<a class="aFooter">Instagram</a> <br>
+					
+					<a class="aFooter">linkedin</a> <br>
+				</div>
+			</div>
+
+			<!--Redes sociais-->
+			<div class="divFooterRedes">
+				<h1 class="h1Footer">Redes sociais</h1>
+				
+				<a class="aFooter" href="https://facebook.com.br">
+					<img class="icon" src="icon/facebook.png" width="30px">
+				</a> 
+				
+				<a class="aFooter">
+					<img class="icon" src="icon/instagram.png" width="30px">
+				</a> 
+				
+				<a class="aFooter">
+					<img class="icon" src="icon/github-sign.png" width="30px">
+				</a> 
+				
+				<a class="aFooter" href="https://youtube.com.br">
+					<img class="icon" src="icon/youtube.png" width="35px">
+				</a>
+			</div>
+		
+		</footer>
+	
+	<body>
+	
+<html>

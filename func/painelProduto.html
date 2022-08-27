@@ -1,0 +1,362 @@
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="cssFunc/universalFunc.css">
+        <link rel="stylesheet" type="text/css" href="cssFunc/forms/formProduto.css">
+        <link rel="stylesheet" type="text/css" href="cssFunc/paineis/painelProduto.css">
+        <script src="js/abrirForm.js" defer></script>
+
+        <title>Produtos</title>
+
+    </head>
+
+    <body>
+
+        <!--Form Cadastro-->
+        <div class="containerNovoProduto" id="containerNovoProduto">
+            <div class="container">
+                <header class="headerForm">
+                    <div class="divTitulo">
+                        <h1 class="titulo">inserir Poduto</h1>
+                    </div>
+                    <div>
+                        <button class="btnFechar" id="btnFechar1">
+                            <img src="icon/esconder.png" width="22px">
+                        </button>
+                    </div>
+                </header>
+
+                <form class="form">
+                    <p class="subtituloForm">ID</p>
+                    <input type="number" name="" id="" class="idProduto">
+
+                    <p class="subtituloForm">local de venda</p>
+                    <select name="" id="" class="vendaProduto">
+                        <option value="">Cantina</option>
+                        <option value="">Secretaria</option>
+                    </select>
+
+                    <p class="subtituloForm">Imagem</p>
+                    <input type="file" name="" id="" class="ImagemProduto">
+
+
+                    <p class="subtituloForm">Descrição</p>
+                    <textarea name="" id="" class="descricaoProduto" cols="30" rows="4"></textarea>
+
+                    <p class="subtituloForm">Valor</p>
+                    <input type="number" name="" id="" class="valorProduto">
+                    
+                    <footer class="footerForm">
+                        <button class="btnLimpar" type="reset">Limpar</button>
+                        <button class="btnSalvar">Salvar</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+
+        <!--Form Editar-->
+        <div class="containerEditarProduto" id="containerEditarProduto">
+            <div class="container">
+                <header class="headerForm">
+                    <div class="divTitulo">
+                        <h1 class="titulo">Editar Poduto</h1>
+                    </div>
+                    <div>
+                        <button class="btnFechar" id="btnFechar2">
+                            <img src="icon/esconder.png" width="22px">
+                        </button>
+                    </div>
+                </header>
+
+                <form class="form">
+                    <p class="subtituloForm">ID</p>
+                    <input type="number" name="" id="" class="idProduto">
+
+                    <p class="subtituloForm">local de venda</p>
+                    <select name="" id="" class="vendaProduto">
+                        <option value="">Cantina</option>
+                        <option value="">Secretaria</option>
+                    </select>
+
+                    <p class="subtituloForm">Imagem</p>
+                    <input type="file" name="" id="" class="ImagemProduto">
+
+
+                    <p class="subtituloForm">Descrição</p>
+                    <textarea name="" id="" class="descricaoProduto" cols="30" rows="4"></textarea>
+
+                    <p class="subtituloForm">Valor</p>
+                    <input type="number" name="" id="" class="valorProduto">
+
+                    <footer class="footerForm">
+                        <button class="btnLimpar" type="reset">Limpar</button>
+                        <button class="btnSalvar">Salvar</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+
+        <main>
+
+            <header>
+                <div class="subHeader">
+                    <a href="menuFuncionario.html">
+                        <img class="voltar" src="icon//botao-de-retorno.png" width="22px">
+                    </a>
+                </div>
+            </header>
+
+            <!--Menu-->
+            <div class="container1">
+                <nav class="containerA">
+
+                    <div class="itemSubtitulo">
+                        <p>Formulários</p>
+                    </div>
+    
+                    <a class="item" href="painelAluno.html">
+                        <div class="itemImagem">
+                            <img src="icon/tampao-de-alunos.png" width="23px">
+                        </div>
+                        <div class="itemInfo">
+                                <p>Aluno</p>
+                                <img src="icon/maior.png" width="20px">
+                        </div>
+                    </a>
+    
+                    <a class="item" href="painelNotas.html">
+                        <div class="itemImagem">
+                            <img src="icon/iconNotas.png" width="22px">
+                        </div>
+                        <div class="itemInfo">
+                                <p>Notas/Faltas</p>
+                                <img src="icon/maior.png" width="20px">
+                        </div>
+                    </a>
+    
+                    <a class="item" href="painelProvas.html">
+                        <div class="itemImagem">
+                            <img src="icon/iconProva.png" width="22px">
+                        </div>
+                        <div class="itemInfo">
+                                <p>Provas</p>
+                                <img src="icon/maior.png" width="20px">
+                        </div>
+                    </a>
+    
+                    <a class="item" href="painelProduto.html">
+                        <div class="itemImagem">
+                            <img src="icon/iconSacola.png" width="22px">
+                        </div>
+                        <div class="itemInfo" href="cadProduto.html">
+                                <p>Produto</p>
+                                <img src="icon/maior.png" width="20px">
+                        </div>
+                    </a>
+    
+                    <a class="item" href="painelRecado.html">
+                        <div class="itemImagem">
+                            <img src="icon/iconSino.png" width="22px">
+                        </div>
+                        <div class="itemInfo">
+                                <p>Recados</p>
+                                <img src="icon/maior.png" width="20px">
+                        </div>
+                    </a>
+    
+                    <a class="item" href="painelMaterial.html">
+                        <div class="itemImagem">
+                            <img src="icon/iconLapis.png" width="22px">
+                        </div>
+                        <div class="itemInfo">
+                                <p>Materiais</p>
+                                <img src="icon/maior.png" width="20px">
+                        </div>
+                    </a>
+                    
+                </nav>
+
+                <input type="checkbox" class="inputMenu" id="check">
+                <label for="check" class="menu">
+                    <img src="icon/iconMenu.png" width="25px">
+                </label>
+
+                <!--Menu esconder-->
+                <nav class="esconder">
+                    <nav class="containerA1">
+
+                        <div class="itemSubtitulo">
+                            <p>Formulários</p>
+                        </div>
+        
+                        <a class="item" href="painelAluno.html">
+                            <div class="itemImagem">
+                                <img src="icon/tampao-de-alunos.png" width="23px">
+                            </div>
+                            <div class="itemInfo">
+                                    <p>Aluno</p>
+                                    <img src="icon/maior.png" width="20px">
+                            </div>
+                        </a>
+        
+                        <a class="item" href="painelNotas.html">
+                            <div class="itemImagem">
+                                <img src="icon/iconNotas.png" width="22px">
+                            </div>
+                            <div class="itemInfo">
+                                    <p>Notas/Faltas</p>
+                                    <img src="icon/maior.png" width="20px">
+                            </div>
+                        </a>
+        
+                        <a class="item" href="painelProvas.html">
+                            <div class="itemImagem">
+                                <img src="icon/iconProva.png" width="22px">
+                            </div>
+                            <div class="itemInfo">
+                                    <p>Provas</p>
+                                    <img src="icon/maior.png" width="20px">
+                            </div>
+                        </a>
+        
+                        <a class="item" href="painelProduto.html">
+                            <div class="itemImagem">
+                                <img src="icon/iconSacola.png" width="22px">
+                            </div>
+                            <div class="itemInfo" href="cadProduto.html">
+                                    <p>Produto</p>
+                                    <img src="icon/maior.png" width="20px">
+                            </div>
+                        </a>
+        
+                        <a class="item" href="painelRecado.html">
+                            <div class="itemImagem">
+                                <img src="icon/iconSino.png" width="22px">
+                            </div>
+                            <div class="itemInfo">
+                                    <p>Recados</p>
+                                    <img src="icon/maior.png" width="20px">
+                            </div>
+                        </a>
+        
+                        <a class="item" href="painelMaterial.html">
+                            <div class="itemImagem">
+                                <img src="icon/iconLapis.png" width="22px">
+                            </div>
+                            <div class="itemInfo">
+                                    <p>Materiais</p>
+                                    <img src="icon/maior.png" width="20px">
+                            </div>
+                        </a>
+                        
+                    </nav>
+
+                    <div class="botao">
+                        <input type="checkbox" class="inputMenu" id="check">
+                        <label for="check" class="menu">
+                            <img src="icon/esconder.png" width="20px">
+                        </label>
+                    </div>
+
+                </nav>
+            </div>
+
+            <!--Conteúdo-->
+            <div class="container2">
+
+                <main class="main">
+                    <div class="containerProduto">
+
+                        <header class="headerPainel">
+
+                            <button type="button" id="btnNovo" class="btnNovo">Novo</button>
+
+                        </header>
+
+                        <!--Painel-->
+                        <div class="painel">
+                            <div class="linhaPrincipal">
+                                <div class="colunaPrincial_1">
+                                    <p class="subtitulo">ID</p>
+                                </div>
+
+                                <div class="colunaPrincial_2">
+                                    <p class="subtitulo">Local</p>
+                                </div>
+
+                                <div class="colunaPrincial_3">
+                                    <p class="subtitulo">Valor</p>
+                                </div>
+
+                                <div class="colunaPrincial_4">
+                                    <p class="subtitulo">Descrição</p>
+                                </div>
+
+                                <div class="colunaPrincial_5">
+                                    <p>Ação</p>
+                                </div>
+                            </div>
+
+
+                            <!--Linha 2-->
+                            <div class="linha">
+                                <div class="coluna_1">
+                                    <p class="subtitulo">2</p>
+                                </div>
+
+                                <div class="coluna_2">
+                                    <p class="subtitulo">Cantina</p>
+                                </div>
+
+                                <div class="coluna_3">
+                                    <p class="subtitulo">R$45,99</p>
+                                </div>
+
+                                <div class="coluna_4">
+                                    <p class="subtitulo">Blusa formandos</p>
+                                </div>
+
+                                <div class="coluna_5">
+                                    <button class="btnEditar" id="btnEditar">Editar</button>
+                                    <button class="btnExcluir">Exlcuir</button>
+                                </div>
+                            </div>
+
+                            <!--Linha 3-->
+                            <div class="linha">
+                                <div class="coluna_1">
+                                    <p class="subtitulo">7</p>
+                                </div>
+
+                                <div class="coluna_2">
+                                    <p class="subtitulo">Secretaria</p>
+                                </div>
+
+                                <div class="coluna_3">
+                                    <p class="subtitulo">R$10,99</p>
+                                </div>
+
+                                <div class="coluna_4">
+                                    <p class="subtitulo">Carteirinha</p>
+                                </div>
+
+                                <div class="coluna_5">
+                                    <button class="btnEditar" id="btnEditar">Editar</button>
+                                    <button class="btnExcluir">Exlcuir</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </main>
+
+            </div>
+
+        </main>
+
+    </body>
+
+</html>

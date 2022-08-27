@@ -1,0 +1,215 @@
+/*Body -----------------------------------------------------------------*/
+body{
+	background: rgb(238, 240, 244);
+	margin: 0px;
+	padding: 0px
+}
+/*-----------------------------------------------------------------------*/
+
+
+/*Header ---------------------------------------------------------------*/
+.headerHeader{
+	display: flex;
+	align-items: center;
+	font-family: arial;
+	height: 50px;
+	width: 100%;
+	background:#1E90FF;
+}
+
+.aHeader{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin-left: 60px;
+	margin-right: -30px;
+	font-size:15px;
+	color: white;
+	text-decoration: none;
+}
+
+
+.aHeader:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+/*-----------------------------------------------------------------------*/
+
+
+/*Menu bar --------------------------------------------------------------*/
+.labelMenu{
+	background-color: #1E90FF;
+	padding: 15.5px;
+	position: absolute;	
+	z-index: 1;
+}
+
+.labelMenu1{
+	padding-left: 20PX;
+}
+
+.labelMenu2{
+	background-color: rgba(0, 0, 0, .0);
+	padding: 20% 0 0 15;
+	position: absolute;	
+	z-index: 1;
+}
+
+.navMenu{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	position: fixed;
+	background: rgb(255, 255, 255, .0);
+	width: 100%;
+	height: 100%;
+	left:-100%;
+}
+
+.esconder{
+	background: rgba(0, 0, 0, 0.45);
+	width: 80%;
+	height: 100%;
+}
+
+.divBotao, .divBotaof{
+	background: rgb(255, 255, 255);
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+}
+
+.aMenu, .aMenuPerfil{
+	height: 8%;
+	background: rgb(255, 255, 255);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	text-decoration: none;
+}
+
+.aMenu:hover{
+	background: rgb(232, 227, 227);
+}
+
+.nome{
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-left: 30px;
+	color: rgb(64, 59, 59);
+}
+
+.icone{
+	margin-right:30px;
+	height: 22px;
+	width: 8px;
+}
+
+.aMenuPerfil{
+	background: #012e57;
+}
+
+/*---Transformações----*/
+.inputMenu[type="checkbox"]:checked~nav
+{
+	transform: translateX(100%);
+}
+
+.inputMenu[type="checkbox"]:checked~.labelMenu
+{
+	transform: translateX(-100%);
+}
+
+.inputMenu[type="checkbox"]
+{
+	display:none;
+}
+
+.inputMenu[type="checkbox"]:checked~.labelMenu
+{
+	position: fixed;
+}
+/*-------------------------------------------------------------------------*/
+
+
+/*Footer ------------------------------------------------------------------*/
+.containerFooter{
+	background: #1E90FF;
+	width: 100%;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.divFooterMargem{
+	width: 65%;
+	height: 55%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.divFooterInfo{
+	width: 25%;
+	text-align: center;
+}
+
+.divFooterRedes{
+	width: 100%;
+	height: 45%;
+	text-align: center;
+	background: #1475d6;
+}
+
+.h1Footer{
+	margin-top: 17.5px;
+	margin-bottom: 17.5px;
+	color: white;
+	font-size: 17px;
+	font-family: "Open Sans",Arial,Helvetica,sans-serif;
+	text-transform: uppercase;	
+}
+
+.pFooter, .aFooter{
+	margin: 7px;
+	color: gainsboro;
+	font-size: 13px;	
+	font-family: "Open Sans",Arial,Helvetica,sans-serif;
+}
+
+.aFooter:hover{
+	text-decoration:underline;
+	cursor: pointer;
+}
+/*-------------------------------------------------------------------------*/
+
+/*-Teste*/
+@media screen and (max-width: 600px){
+
+	.esconder{
+		background: rgba(0, 0, 0, 0.45);
+		width: 50%;
+		height: 100%;
+	}
+	
+	.divBotao, .divBotaof{
+		background: rgb(255, 255, 255);
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.divFooterMargem{
+		height: 82.5%;
+	}
+
+	.divFooterRedes{
+		height: 17.5%;
+	}
+
+	.containerFooter{
+		height: 700px;
+	}
+
+    .divFooterInfo{
+		width: 100%;
+	}
+    
+}

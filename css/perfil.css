@@ -1,0 +1,132 @@
+main{
+    width: 100%;
+    height: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+/*Conatiner 1*/
+.containerAluno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #5fb6ec, #0b5396);
+    width: 100%;
+    height: 25%;
+}
+
+.div1, .div2, .div3{
+    width: 98%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.div2{
+    height: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+.div3{
+    height: 20%;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+}
+
+/*DIV 2*/
+.containerDados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+    height: 75%;
+}
+
+.divInfoPessoal, .divInfoEscola, .divInfoLogin{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 35%;
+    height: 100%;
+}
+
+.divInfoEscola{
+    width: 30%;
+}
+
+.divTituloPessoal, .divTituloEscola, .divTituloLogin{
+    display: flex;
+    justify-content: left;
+    align-items:flex-end;
+    width: 100%;
+    height: 20%;
+}
+
+.h1Titulo{
+    margin: 0;
+    font-size: 22.5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #092f55;
+    text-transform: uppercase;
+}
+
+.divInfosA, .divInfosB, .divInfosC{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80%;
+}
+
+.divInfosC{
+    height: 30%;
+}
+
+.divBotoes{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    color: white;
+    width: 60%;
+    height: 40px;
+    background: #1E90FF;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background: #1475d6;
+    cursor: pointer;
+}
+
+
+.cont, .tit{
+    margin-bottom: -20;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    color: rgb(105, 100, 100);
+}
+
+.tit{
+    margin-top: 35;
+    color:#1475d6;
+}

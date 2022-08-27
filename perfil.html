@@ -1,0 +1,193 @@
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8"> <title>Perfil</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/universal.css">
+		<link rel="stylesheet" type="text/css" href="css/perfil.css">
+		<link rel="stylesheet" type="text/css" href="forms/formNovaSenha.css">
+		<script src="js/abrirForm.js" defer></script>
+
+	</head>
+		
+	<body>
+		<!--Form Trocar senha-->
+		<div class="containerForm" id="containerForm">
+			<form class="formSenhaNova">
+				<header class="headerForm">
+					<div class="headerTitulo">
+						<h1>ALTERAR SENHA</h1>
+					</div>
+					<div class="headerBotao">
+						<a onclick="fechaFormAterarSenha()" id="btnFechar">
+							<img src="icon/esconder.png" width="22px">
+						</a>
+					</div>
+				</header>
+				<div class="inputForm">
+					<input type="password" class="inputSenha" placeholder="Senha atual">
+					<input type="password" class="inputSenha" placeholder="Nova senha">
+					<input type="password" class="inputSenha" placeholder="Digite novamente a nova senha">
+				</div>
+				<footer class="footerForm">
+					<button class="btnAlterar">Alterar</button>
+				</footer>
+			</form>
+		</div>
+
+		<main>
+			<!--Header-->
+			<header class="containerAluno">
+				<div class="div1">
+					<a href="menuAluno.html">
+						<img src="icon/botao-de-retorno.png" width="23px">
+					</a>
+				</div>
+				<div class="div2">
+					<img src="icon/perfil.png" width="120px">
+				</div>
+				<div class="div3">
+					<h1>Fabrício</h1>
+				</div>
+			</header>
+
+			<div class="containerDados">
+
+				<div class="divInfoPessoal">
+
+					<div class="divTituloPessoal">
+						<h1 class="h1Titulo">Dados pessoais</h1>
+					</div>
+
+					<div class="divInfosA">
+						<p class="tit">Nome</p>
+						<p class="cont">Fabrício Ferreira Tavares</p>
+						
+						<p class="tit">Data de nascimento</p>
+						<p class="cont">21/08/2004</p>
+
+						<p class="tit">Mãe</p>
+						<p class="cont">Maia das Lurdes</p>
+
+						<p class="tit">Cidade</p>
+						<p class="cont">Paulínia</p>
+					</div>
+
+				</div>
+				<div class="divInfoEscola">
+
+					<div class="divTituloPessoal">
+						<h1 class="h1Titulo">Dados escolares</h1>
+					</div>
+
+					<div class="divInfosB">
+						<p class="tit">Escola</p>
+						<p class="cont">CEMEP</p>
+						
+						<p class="tit">RA</p>
+						<p class="cont">5346456577</p>
+
+						<p class="tit">Periodo</p>
+						<p class="cont">integral</p>
+
+						<p class="tit">Sala</p>
+						<p class="cont">3Y</p>
+
+						<p class="tit">Matricula</p>
+						<p class="cont">3453546456</p>
+					</div>
+
+				</div>
+
+				<div class="divInfoLogin">
+
+					<div class="divTituloPessoal">
+						<h1 class="h1Titulo">Dados de login</h1>
+					</div>
+
+					<div class="divInfosC">
+						<p class="tit">Email</p>
+						<p class="cont">fabriciodozeroff847@gmail.com</p>
+						
+						<p class="tit">Senha</p>
+						<p class="cont">********</p>
+					</div>
+
+					<div class="divBotoes">
+						<button onclick="abreFormAterarSenha()" class="btn" id="btnAlterar">Alterar senha</button>
+					</div>
+					
+				</div>
+
+			</div>
+
+		</main>
+			
+
+		<!--Footer-->
+		<footer class="containerFooter">
+
+			<div class="divFooterMargem">
+				<!--1-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Informações sobre</h1>
+					<p class="pFooter">Este site terá o objetivo padronizar escolas, para que tenham uma gestão mais simples e rápida</p> 
+				</div>
+				
+				<!--2-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Contatos</h1>
+					<p class="pFooter">(19) 98254-4396</p>
+					<p class="pFooter">(19) 98459-7236</p> 
+				</div>
+				
+				<!--3-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Dúvidas</h1>
+					
+					<a class="aFooter">Como usar</a> <br>
+					
+					<a class="aFooter">Como acessar</a> <br>
+					
+					<a class="aFooter">Dias de aulas</a> <br>
+				</div>
+				
+				<!--4-->
+				<div class="divFooterInfo">
+					<h1 class="h1Footer">Redes sociais</h1>
+					
+					<a class="aFooter">Facebook</a> <br>
+					
+					<a class="aFooter">Instagram</a> <br>
+					
+					<a class="aFooter">linkedin</a> <br>
+				</div>
+			</div>
+
+			<!--Redes sociais-->
+			<div class="divFooterRedes">
+				<h1 class="h1Footer">Redes sociais</h1>
+				
+				<a class="aFooter" href="https://facebook.com.br">
+					<img class="icon" src="icon/facebook.png" width="30px">
+				</a> 
+				
+				<a class="aFooter">
+					<img class="icon" src="icon/instagram.png" width="30px">
+				</a> 
+				
+				<a class="aFooter">
+					<img class="icon" src="icon/github-sign.png" width="30px">
+				</a> 
+				
+				<a class="aFooter" href="https://youtube.com.br">
+					<img class="icon" src="icon/youtube.png" width="35px">
+				</a>
+			</div>
+		
+		</footer>
+			
+	</body>
+
+</html>

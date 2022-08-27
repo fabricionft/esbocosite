@@ -1,0 +1,72 @@
+/*Formatação dos formulários*/
+main{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.formIndex{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 300px;
+	height: 400px;
+}
+
+.inputForm{
+	padding-left: 8px;
+	border-radius: 5px;
+	background: rgb(254, 254, 255);
+	border: 1px solid rgb(226, 222, 222);
+	width: 270px;
+	height: 60px;
+	margin-bottom: 20px;
+	color:rgb(87, 89, 93);
+}
+
+.inputForm:hover{
+	border: 1px solid #0174df;
+	cursor: pointer;
+}
+
+.pForm{
+	font-size: 12PX;
+	font-family: arial;
+	text-align: center;
+}
+
+.btn{
+	padding: 14 115 14 115;
+	text-decoration: none;
+	background-image: linear-gradient(to right, #a9d0f5, #87cefa, #0174df, #0404b4);
+	background-attachment: fixed;
+	border-radius: 5px;
+	text-align: center;
+	color:white;
+	margin: 20 0 10 0;
+}
+
+.btn:hover{
+	background: #1475d6;
+	cursor: pointer;
+}
+
+.aForm{
+	text-decoration: none;
+	text-align: right;
+	color: #0174df;
+	font-family: arial;
+	font-size: 12px;
+}
+
+.aForm:hover{
+	color: #095aa5;
+}
+
+.h1Index{
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 40px;
+	color: rgb(77, 79, 82);
+}
